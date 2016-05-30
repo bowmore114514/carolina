@@ -19,15 +19,15 @@ public class Event {
 	/**
 	 * イベント製作者の備考欄
 	 */
-	private String autherRemark;//イベント製作者の備考欄
+	private String authorRemark;//イベント製作者の備考欄
 	/**
 	 * イベント製作者名
 	 */
-	private String autherName;//イベント製作者の名前
+	private String authorName;//イベント製作者の名前
 	/**
 	 * イベント製作者の編集用pass
 	 */
-	private String autherPass;//イベント製作者の編集用pass
+	private String authorPass;//イベント製作者の編集用pass
 	/**
 	 * イベントページのURL。?pageid=
 	 */
@@ -66,15 +66,15 @@ public class Event {
 	public static String masterKey = "password";//管理者用のパスワード
 
 //-------------------Constructor--------------------
-	public Event(String eventId, String eventName, String autherRemark, String autherName, String autherPass,
+	public Event(String eventId, String eventName, String authorRemark, String authorName, String authorPass,
 			String eventUrl, Calendar deadlineDay, Calendar determinedDay, Calendar registDay, Calendar updatedate,
 			int determinedFlag, int eventOpenFlag) {
 		super();
 		this.eventId = eventId;
 		this.eventName = eventName;
-		this.autherRemark = autherRemark;
-		this.autherName = autherName;
-		this.autherPass = autherPass;
+		this.authorRemark = authorRemark;
+		this.authorName = authorName;
+		this.authorPass = authorPass;
 		this.eventUrl = eventUrl;
 		this.deadlineDay = deadlineDay;
 		this.determinedDay = determinedDay;
@@ -101,28 +101,28 @@ public class Event {
 		this.eventName = eventName;
 	}
 
-	public String getAutherRemark() {
-		return autherRemark;
+	public String getauthorRemark() {
+		return authorRemark;
 	}
 
-	public void setAutherRemark(String autherRemark) {
-		this.autherRemark = autherRemark;
+	public void setauthorRemark(String authorRemark) {
+		this.authorRemark = authorRemark;
 	}
 
-	public String getAutherName() {
-		return autherName;
+	public String getauthorName() {
+		return authorName;
 	}
 
-	public void setAutherName(String autherName) {
-		this.autherName = autherName;
+	public void setauthorName(String authorName) {
+		this.authorName = authorName;
 	}
 
-	public String getAutherPass() {
-		return autherPass;
+	public String getauthorPass() {
+		return authorPass;
 	}
 
-	public void setAutherPass(String autherPass) {
-		this.autherPass = autherPass;
+	public void setauthorPass(String authorPass) {
+		this.authorPass = authorPass;
 	}
 
 	public String getEventUrl() {
